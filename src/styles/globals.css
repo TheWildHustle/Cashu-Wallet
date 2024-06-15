@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+main {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.cashu-operations-container {
+  max-width: 600px;
+}
+
+.section {
+  margin-bottom: 20px;
+  background-color: rgb(2, 58, 2);
+  padding: 15px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.section label {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.section input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+.section button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+.data-display-container {
+  background-color: rgb(2, 58, 2);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(110, 107, 107, 0.1);
+  width: 400px;
+  height: auto;
+  overflow-y: auto;
+}
+
+.data-display-container h2 {
+  margin-top: 0;
+}
+
+.data-output {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  height: 80%;
+}
+
+@layer utilities {
+  .text-balance {
+    /* Invalid property replaced or add necessary utility if needed */
+    /* This is a placeholder; adjust as necessary or remove */
+    white-space: normal; /* Example replacement */
+  }
+}
