@@ -99,8 +99,6 @@ main {
 
 @layer utilities {
   .text-balance {
-    /* Invalid property replaced or add necessary utility if needed */
-    /* This is a placeholder; adjust as necessary or remove */
-    white-space: normal; /* Example replacement */
+    text-wrap: balance;
   }
 }
